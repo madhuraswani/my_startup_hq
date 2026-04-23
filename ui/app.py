@@ -270,10 +270,12 @@ def render_results():
         for col, (role, data) in zip(vote_cols, result["votes"].items()):
             vote = data["vote"]
             vote_color = "green" if vote == "APPROVE" else ("red" if vote == "REJECT" else "orange")
+            role_color = ROLE_COLORS.get(role, "#888")
+            role_emoji = ROLE_EMOJI.get(role, "")
             col.markdown(
                 f"<div style='text-align:center; padding: 10px; "
-                f"border: 2px solid {ROLE_COLORS.get(role, \"#888\")}; border-radius: 8px;'>"
-                f"<strong>{ROLE_EMOJI.get(role,'')} {role}</strong><br>"
+                f"border: 2px solid {role_color}; border-radius: 8px;'>"
+                f"<strong>{role_emoji} {role}</strong><br>"
                 f"<small>{data['name']}</small><br>"
                 f"<span style='color:{vote_color}; font-weight:bold; font-size:1.1em'>{vote}</span>"
                 f"</div>",
