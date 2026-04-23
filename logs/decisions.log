@@ -1,0 +1,40 @@
+## Decision Log
+
+---
+
+### [2026-04-09] Proposal 01: EdgeBot Tutor — CFO Review
+
+**Reviewer:** CFO (The Pragmatic Anchor)
+**Vote:** CONDITIONAL APPROVE — Phase 1 prototype only. No production spend until pilot data justifies it.
+
+---
+
+**Fiscal Critique:**
+
+**Strengths:**
+- BOM target of <$35 is credible for ESP32-S3-class hardware. Keeps unit economics workable if wholesale margin targets 50–60%.
+- Zero cloud inference cost is a genuine structural advantage over API-dependent competitors. No per-query COGS is meaningful at scale.
+- Crowdfund-before-manufacture is the right capital-efficient sequencing. Transfers demand risk to backers, not the balance sheet.
+- Automation-first backend reduces headcount burn in v1. Positive signal for runway preservation.
+
+**Concerns:**
+
+1. **No unit economics model presented.** A <$35 BOM at prototype quantities is very different from <$35 at 500-unit MOQ. No landed cost, no assembly cost, no failure/RMA rate estimate. Cannot evaluate margin until these numbers exist.
+
+2. **CAC is undefined.** "Pilot with 2 schools" is a feedback mechanism, not a sales channel. No estimate of cost-per-unit-sold, cost-per-school-contract, or payback period. B2B school procurement cycles are notoriously 6–18 months — this will burn runway silently.
+
+3. **LTV is unmodeled.** Is this a one-time hardware sale or a recurring curriculum/software subscription? If it's purely hardware, LTV is capped at ASP minus COGS. The proposal's TAM figures ($340B EdTech) are market-size vanity — not addressable revenue for a hardware kit startup in year one.
+
+4. **Crowdfunding is not a financial plan.** It de-risks demand validation, but campaign success rates for EdTech hardware are historically weak without an established community. No target raise, no fallback if campaign underperforms.
+
+5. **500 learner-hours in 6 months from 2 pilot schools is not a commercial metric.** It validates the product, not the business. The log needs a revenue or pre-order milestone, not just usage data.
+
+**Conditions for Full Green-Light:**
+- Deliver a one-page unit economics model (BOM at 100-unit and 500-unit scale, target ASP, gross margin %).
+- Define the revenue model: hardware-only vs. hardware + SaaS curriculum subscription.
+- Set a crowdfund minimum viable raise target with a kill threshold (if we don't hit X, we reassess).
+- Add a 12-month cash burn estimate for the prototype-to-crowdfund phase.
+
+**Bottom Line:** The technical thesis is sound and differentiated. The financial scaffolding is absent. Approve the 8-week prototype sprint — it is low-cost and validates the hardest technical risk. Block production spend and any hiring until unit economics and GTM costs are quantified.
+
+---

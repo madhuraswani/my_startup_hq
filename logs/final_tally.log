@@ -1,0 +1,202 @@
+# Final Board Vote — Proposal 01: EdgeBot Tutor
+**Date:** 2026-04-09
+**Voting Member:** CFO (The Pragmatic Anchor)
+
+---
+
+## Vote: REJECT (Pending Financial Resubmission)
+
+---
+
+## Reasoning
+
+The board discussion has clarified the technical and market picture considerably. Neither outcome improves my fiscal position — if anything, the group review has hardened my concerns.
+
+### What the Group Discussion Confirmed
+
+**From the CTO:**
+- The prototype BOM is $50–70, not $35. The sub-$35 figure is a volume-pricing claim that requires a minimum run of 500–1,000 units. My risk-case unit economics (BOM ~$40 at low volume) is effectively the *base case* at launch. Gross margin at prototype scale is approximately 30–40% on a $65 retail price — below sustainable threshold.
+- The 50M parameter model doesn't fit on the hardware. This is a proposal credibility failure. If the core technical claim is wrong, what else hasn't been stress-tested? The corrected architecture (classification + templated responses) is sound, but the revision is still pending — this proposal has not been updated.
+
+**From the CMO:**
+- The beachhead buyer (India/SEA homeschool co-op parent) has a willingness-to-pay of $35–60 — the lower end of my pricing scenarios. This compresses margin precisely where BOM is highest (pre-scale). The high-margin market and the target beachhead are not the same market. The CMO named this risk; it remains unmitigated.
+- No recurring revenue mechanics were proposed by the CMO either. The hardware-only model is a shared concern. A "shareable progress" feature and a Discord community are retention tools, not revenue streams.
+
+### Blocking Items Remain Unresolved
+
+None of the five items I flagged in my prior analysis have been addressed:
+
+| Blocking Item | Status |
+|---|---|
+| Prototype budget ($ and hours) | Not provided |
+| Crowdfunding target amount | Not provided |
+| Minimum production run quantity | Not provided |
+| Recurring revenue model | Not proposed by any board member |
+| Founder cash/salary assumptions | Not provided |
+
+### The Recurring Revenue Gap Is the Deciding Factor
+
+A one-time $65–100 hardware sale with no follow-on revenue produces an LTV:CAC ratio that is structurally below 3:1 at any realistic crowdfunding CAC ($15–40/backer). This is not a venture-backable model as written. The CMO identified retention levers (community, progress sharing, parent summaries) but none of them generate revenue. The CFO needs a recurring revenue proposal — curriculum subscription, premium lesson packs, a school seat license — before this can be presented to any investor or approved for resource commitment.
+
+---
+
+## Path to Approval
+
+I will change my vote to **APPROVE** if the CEO resubmits with:
+
+1. A Phase 1 budget with explicit line items (hardware BOM × prototype units, engineering hours, pilot logistics, crowdfunding campaign spend)
+2. A crowdfunding minimum success threshold (the unit quantity required to fund a production run that achieves sub-$35 BOM)
+3. One proposed recurring revenue mechanism with an LTV estimate
+4. An updated proposal correcting the model architecture per the CTO's specification
+
+This is not a rejection of the concept. The technical differentiation is real. The market gap is real. The on-device cost advantage is real. The product can be built. The business model cannot yet be evaluated.
+
+**Revenue is reality. A plan without numbers is a vision document, not a proposal.**
+
+---
+
+## Summary Tally (All Board Members)
+
+| Member | Vote |
+|---|---|
+| CEO | APPROVE (proposing party) |
+| CTO | Withheld — pending model architecture revision |
+| CMO | **APPROVE — with GTM conditions (see CMO Final Vote below)** |
+| CFO | **REJECT — pending financial resubmission** |
+
+**Net Decision: Project does not advance. Resubmission required.**
+
+---
+
+# CMO Final Vote — Proposal 01: EdgeBot Tutor
+**Date:** 2026-04-09
+**Voting Member:** CMO (The Market Growth Engine)
+
+---
+
+## Vote: APPROVE (Conditional — Prototype Phase Only)
+
+---
+
+## Reasoning
+
+Having read the CTO and CFO analyses, my position is clear: **the market case for moving to prototype is stronger now than when the proposal was first submitted, not weaker.** The board discussion did not surface a competitor doing this better. It surfaced execution risks — which is exactly what a prototype is designed to resolve.
+
+### Where I Agree with the CFO
+
+The CFO is right that there is no recurring revenue model. This is a real gap. A one-time hardware sale is a weak LTV structure, and I said so in my own analysis. However, the CFO is blocking the *prototype* phase pending financial numbers that can only be generated *by running the prototype and pilot*. You cannot model crowdfunding conversion rates, pilot school engagement, or content subscription willingness-to-pay from a spreadsheet in a vacuum. The data doesn't exist yet because the product doesn't exist yet.
+
+Demanding a complete LTV:CAC model before greenlighting a $50–70 prototype build is the kind of analysis-paralysis that lets a 18-24 month competitive window close while we wait for certainty that will never come pre-launch.
+
+**My push-back to the CFO:** The prototype budget is low enough that the market risk of *not* building it exceeds the financial risk of building it. The CFO's blocking items are valid inputs for a *Series A* pitch — not a prerequisite for greenlighting a single working unit.
+
+### Where I Agree with the CTO
+
+The 50M parameter error is a proposal credibility problem, and the CTO is right to flag it. The corrected architecture — classification model + templated tutor responses — is actually *better marketing* than language generation. Deterministic, reliable responses from a K-12 tutor are more trustworthy than stochastic outputs. The parent's fear is "what if the AI tells my kid something wrong?" A templated FSM eliminates that objection entirely. This is a feature, not a downgrade, and it should be positioned as such.
+
+### The Competitive Clock Is the Deciding Factor
+
+The CMO's job is to read the market window. The window here is 18–24 months. No direct competitor exists at this price point with on-device AI. The Makeblock mBot is the closest analog at $50–80, is cloud-dependent, and has no adaptive intelligence. The Raspberry Pi Foundation is a latent threat but has shown no intent in this direction.
+
+Every week spent in pre-prototype financial modeling shortens the window without generating any data. The prototype phase is low-cost, low-burn, and high-information. This is exactly the right bet to take at this stage.
+
+### What Must Happen for This Approval to Hold
+
+My APPROVE is for the **prototype phase only** and is conditional on the following GTM commitments being locked before pilot school outreach begins:
+
+| Condition | Requirement |
+|---|---|
+| Primary customer persona | One buyer locked: India/SEA homeschool co-op parent. All prototype UX and messaging designed for this person. |
+| "AI catching a mistake" clip | Prototype demo session must be recorded. This is the crowdfunding campaign's anchor asset. Non-negotiable. |
+| Messaging strip | All public-facing language (crowdfunding page, pilot pitch, social) must pass the 5-second test: no VLSI jargon, no "DAG-based curriculum," no parameter counts. Benefits only. |
+| Crowdfunding platform decision | India-first pre-order page vs. global Kickstarter must be decided before prototype is complete, not after. |
+| One retention mechanic | Pick one before pilot launch: shareable achievement badges, weekly parent summary SMS, or a WhatsApp community group. One is enough for Phase 1. |
+
+If the prototype is built without these five items locked, we will have a technically impressive device with no story to sell it. The CTO builds the product. The CMO builds the audience. Both must run in parallel from Day 1.
+
+---
+
+## Summary Position
+
+The market gap is real. The hook lands in five seconds. The competitive window is open and closing. The prototype cost is low enough that the only rational move is to build it and generate data. The CFO's revenue model concerns are valid for a funding pitch, not a prototype greenlight.
+
+**Build the prototype. Capture the demo. Then we have something to sell.**
+
+---
+
+## Updated Summary Tally (All Board Members)
+
+| Member | Vote |
+|---|---|
+| CEO | APPROVE (proposing party) |
+| CTO | Withheld — pending model architecture revision |
+| CMO | **APPROVE — prototype phase only, GTM conditions above** |
+| CFO | REJECT — pending financial resubmission |
+
+**Net Decision: Split board. Two abstentions, one approve, one reject. CEO must decide whether to proceed to prototype under CMO approval or await CTO/CFO alignment.**
+
+---
+
+# CTO Final Vote — Proposal 01: EdgeBot Tutor
+**Date:** 2026-04-09
+**Voting Member:** CTO (The Engineering Architect)
+
+---
+
+## Vote: APPROVE (Conditional — Prototype Phase Only)
+
+---
+
+## Reasoning
+
+My prior position was withheld pending a model architecture revision. Having reviewed the CMO and CFO analyses in full, I am moving to a conditional **APPROVE**. Here is my engineering-driven reasoning.
+
+### The Architecture Error Is Correctable — and Already Corrected
+
+The "~50M parameter language + classification model" claim in the original proposal is wrong. I documented this in my feasibility study with precision: the ESP32-S3 with 8 MB PSRAM cannot run any model above ~2M parameters without severe runtime degradation, and the correct Phase 1 target is **≤500K parameters, INT8 QAT-trained, classification architecture**. The corrected design — a classifier driving a finite-state machine with pre-authored templated tutor responses — is not a compromise. It is the architecturally superior design for this use case.
+
+Critically: the correction is fully defined. I have specified the hardware decision table, the inference runtime (TFLite Micro), the training data strategy (simulation-based synthetic data), and the software stack. **There is no remaining ambiguity in the Phase 1 architecture.** Withholding a vote over a documented correction that is fully resolved in my own analysis is process theater.
+
+### The CMO Argument Changed My Calculus
+
+The 18–24 month competitive window is an engineering constraint, not just a marketing preference. If Makeblock, Raspberry Pi Foundation, or a well-funded Chinese hardware ODM ships an adaptive AI kit in that window, our technical moat becomes a commodity feature. The prototype phase is the only way to generate pilot data, refine the classifier, and establish a real-world feedback loop before that window closes. The prototype cost is $50–70 in hardware and a single engineer's focused sprint. The opportunity cost of delaying is orders of magnitude larger.
+
+### Where I Align with the CFO — and Where I Diverge
+
+The CFO is correct that the BOM-at-prototype-scale ($50–70) versus BOM-at-production-scale (<$35) gap is a real financial risk. I flagged this in my own analysis. However, the CFO's blocking items — crowdfunding target, recurring revenue model, LTV:CAC ratio — are outputs of the prototype and pilot phase, not inputs to it. You cannot model conversion rates for a product that doesn't exist. The prototype generates the data the CFO needs to complete the financial model. Blocking the prototype because the financial model is incomplete is inverting the dependency.
+
+I also note: the on-device inference architecture eliminates recurring cloud API costs permanently. At pilot scale this is negligible; at 500,000 sessions/year it is material. This is a structural cost advantage that compounds with scale and should not be discounted in the LTV analysis.
+
+### My Conditions for This Approval
+
+This APPROVE is for the **prototype phase only**. It is contingent on the following engineering commitments being locked and executed before any other milestone is counted:
+
+| Commitment | Requirement | Why It's Non-Negotiable |
+|---|---|---|
+| Architecture revision committed | All documentation updated: ≤500K params, INT8, QAT, classifier + FSM. "50M parameter language model" language removed everywhere. | The current proposal contains a technical error. Running engineering from a wrong spec produces wasted work. |
+| Training data pipeline begins Week 1 | Synthetic simulation pipeline for motor control, PWM, and sensor error classes is the critical path. No slip. | Training data is the longest-lead item. A Week 5 start guarantees a Week 10–12 slip. |
+| RP2040 dropped from all specifications | ESP32-S3 only. | RP2040 cannot run the inference workload. It is a distraction. |
+| Curriculum engine scoped to linear state machine | 3 sequential modules for prototype. DAG architecture is Phase 2. | Over-engineering the curriculum engine in Phase 1 steals time from the model, which is the product. |
+| Teacher dashboard deferred | No dashboard work until Phase 2. Dashboard sync protocol cannot be specified until Phase 1 data transport mechanism is chosen. | Premature dashboard work is scope creep. |
+| Watchdog timer (WDT) enforced from Day 1 | Student code execution must be timeout-gated. Single register write in firmware. | Students will write infinite loops. This is not a maybe. |
+
+### The Bottom Line
+
+The core technical thesis is sound. The platform choice is correct. The inference strategy is correct (with revision). The training approach is defined. The timeline is achievable under correct scoping. The competitive window is real and closing.
+
+The architecture error in the original proposal is a documentation problem, not a design flaw. The design flaw was corrected in my feasibility study. That correction is locked. We can build from it.
+
+**Build the prototype. Run it correctly. Generate the data the CFO needs to write the financial model.**
+
+---
+
+## Final Summary Tally (All Board Members)
+
+| Member | Vote | Condition |
+|---|---|---|
+| CEO | APPROVE | Proposing party |
+| CMO | APPROVE | GTM conditions: primary persona locked, demo clip captured, jargon-free messaging, crowdfunding platform decided, one retention mechanic before pilot |
+| CTO | **APPROVE** | Architecture revision committed, training data pipeline Week 1, RP2040 dropped, curriculum scoped to linear state machine, dashboard deferred, WDT enforced |
+| CFO | REJECT | Pending: Phase 1 budget, crowdfunding target, minimum production run quantity, recurring revenue mechanism |
+
+**Net Decision: 3 APPROVE / 1 REJECT — Majority approves prototype phase. CFO dissent is formally recorded. Prototype greenlit with CTO and CMO conditions as binding constraints. CFO blocking items are mandatory inputs for the crowdfunding campaign pitch, not for prototype start.**

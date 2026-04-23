@@ -1,0 +1,468 @@
+[
+  {
+    "id": "comp_001",
+    "category": "competition",
+    "title": "Competitor Launches Free Tier",
+    "difficulty": "medium",
+    "context": "A well-funded competitor just launched a free version of your core product. Your paid signups dropped 23% this week and 3 enterprise prospects paused negotiations.",
+    "trigger_question": "Do we respond with a free tier, double down on premium, or pivot our positioning?",
+    "data_points": {
+      "runway_remaining": "14 months",
+      "current_mrr": "$18,000",
+      "competitor_funding": "$5M Series A",
+      "churn_this_week": "4 paying customers"
+    },
+    "roles_most_affected": ["CMO", "CFO", "CEO"]
+  },
+  {
+    "id": "comp_002",
+    "category": "competition",
+    "title": "Big Tech Enters Your Market",
+    "difficulty": "hard",
+    "context": "Google just announced a product that overlaps 60% of your feature set. It will be free and integrated into their existing ecosystem. Launch is in 90 days.",
+    "trigger_question": "Do we fight, niche down, seek acquisition, or find a completely different angle?",
+    "data_points": {
+      "runway_remaining": "18 months",
+      "current_mrr": "$42,000",
+      "google_launch_date": "90 days",
+      "our_differentiator": "Deep vertical customization for e-learning"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CTO"]
+  },
+  {
+    "id": "funding_001",
+    "category": "funding",
+    "title": "VC Term Sheet with Aggressive Terms",
+    "difficulty": "hard",
+    "context": "A top-tier VC is offering $2M at a $6M pre-money valuation but wants a 1.5x liquidation preference, pro-rata rights, and a board seat. Your current angel round gave away 15%.",
+    "trigger_question": "Do we take the deal, negotiate, or keep bootstrapping?",
+    "data_points": {
+      "runway_remaining": "6 months",
+      "current_mrr": "$8,000",
+      "equity_given_away": "15%",
+      "monthly_burn": "$32,000"
+    },
+    "roles_most_affected": ["CEO", "CFO"]
+  },
+  {
+    "id": "funding_002",
+    "category": "funding",
+    "title": "Bridge Round or Default",
+    "difficulty": "hard",
+    "context": "You have 8 weeks of runway left. A Series A fell through. An existing angel is willing to do a $300K bridge at a 20% discount on the next round. No other term sheets are on the table.",
+    "trigger_question": "Do we take the bridge, cut costs to extend runway, or start shutdown proceedings?",
+    "data_points": {
+      "runway_remaining": "8 weeks",
+      "monthly_burn": "$38,000",
+      "current_mrr": "$11,000",
+      "team_size": "6 people"
+    },
+    "roles_most_affected": ["CEO", "CFO", "CTO"]
+  },
+  {
+    "id": "product_001",
+    "category": "product",
+    "title": "Kill the Feature or Double Down",
+    "difficulty": "medium",
+    "context": "Your AI recommendation engine took 3 months to build and is used by only 8% of users. Power users who do use it have 3x retention. It costs $4,200/month to run.",
+    "trigger_question": "Do we kill it to save costs, keep it as a premium upsell, or invest more to increase adoption?",
+    "data_points": {
+      "feature_adoption": "8%",
+      "retention_lift": "3x for users who use it",
+      "monthly_cost": "$4,200",
+      "build_time": "3 months"
+    },
+    "roles_most_affected": ["CTO", "CMO", "CFO"]
+  },
+  {
+    "id": "product_002",
+    "category": "product",
+    "title": "Build vs Buy Decision",
+    "difficulty": "medium",
+    "context": "You need a payments layer. Building in-house will take the CTO 6 weeks. Stripe costs 2.9% + $0.30 per transaction. At your current projected volume, Stripe costs $3,800/month vs $0 ongoing for in-house.",
+    "trigger_question": "Build it or use Stripe?",
+    "data_points": {
+      "build_time": "6 weeks",
+      "stripe_monthly_cost": "$3,800 at projected volume",
+      "in_house_ongoing_cost": "$0 but requires 1 engineer month to maintain per year",
+      "current_dev_backlog": "14 weeks of work"
+    },
+    "roles_most_affected": ["CTO", "CFO", "CEO"]
+  },
+  {
+    "id": "product_003",
+    "category": "product",
+    "title": "Customer Wants Custom Feature",
+    "difficulty": "easy",
+    "context": "Your biggest customer ($4,200 MRR, 23% of total revenue) wants a custom integration that no other customer has asked for. It will take 4 weeks to build and requires dedicated maintenance.",
+    "trigger_question": "Do we build it, charge extra for it, or say no and risk losing them?",
+    "data_points": {
+      "customer_mrr": "$4,200",
+      "percentage_of_total_revenue": "23%",
+      "build_time": "4 weeks",
+      "other_customers_requesting_this": "0"
+    },
+    "roles_most_affected": ["CEO", "CTO", "CFO"]
+  },
+  {
+    "id": "hiring_001",
+    "category": "hiring",
+    "title": "Lead Engineer Quit",
+    "difficulty": "hard",
+    "context": "Your lead engineer resigned with 2 weeks notice. They own 60% of your codebase knowledge. You have 3 options: hire a senior replacement ($140K/yr), bring in a contractor ($180/hr), or redistribute work across the remaining 2 junior devs.",
+    "trigger_question": "How do we handle this without derailing the Q3 roadmap?",
+    "data_points": {
+      "runway_remaining": "11 months",
+      "monthly_burn_increase_with_senior_hire": "$11,700",
+      "contractor_estimate": "$28,800/month",
+      "junior_dev_capacity": "Covers ~40% of the departed engineer's output",
+      "q3_roadmap_at_risk": "2 major features"
+    },
+    "roles_most_affected": ["CTO", "CFO", "CEO"]
+  },
+  {
+    "id": "hiring_002",
+    "category": "hiring",
+    "title": "Hire Sales or Extend Runway",
+    "difficulty": "medium",
+    "context": "Growth has plateaued at $18K MRR for 3 months. You have no dedicated sales person — the CEO handles all deals. A strong sales hire would cost $85K base + commission. The CEO believes this is the unlock.",
+    "trigger_question": "Hire sales now or wait until MRR hits $30K?",
+    "data_points": {
+      "current_mrr": "$18,000",
+      "months_at_plateau": "3",
+      "sales_hire_cost": "$85K base + 10% commission",
+      "runway_remaining": "13 months",
+      "ceo_sales_hours_per_week": "20 hours"
+    },
+    "roles_most_affected": ["CEO", "CFO", "CMO"]
+  },
+  {
+    "id": "pivot_001",
+    "category": "pivot",
+    "title": "Users Aren't Paying",
+    "difficulty": "hard",
+    "context": "You have 1,200 active users with strong engagement but only 34 paying customers. 6 months of trying different pricing models hasn't moved the needle. Users love the product but say 'I'd never pay for this.'",
+    "trigger_question": "Do we pivot to B2B, find a new monetization model, or accept this won't be a business?",
+    "data_points": {
+      "active_users": "1,200",
+      "paying_customers": "34",
+      "conversion_rate": "2.8%",
+      "nps_score": "71",
+      "runway_remaining": "9 months"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CFO"]
+  },
+  {
+    "id": "pivot_002",
+    "category": "pivot",
+    "title": "Wrong Customer Segment",
+    "difficulty": "medium",
+    "context": "You built for SMBs but the only customers willing to pay enterprise prices are large companies. Enterprise sales cycles are 6 months. Your current product needs significant hardening for enterprise compliance.",
+    "trigger_question": "Do we stay SMB and cut price, go upmarket to enterprise, or build a hybrid motion?",
+    "data_points": {
+      "smb_avg_contract": "$120/month",
+      "enterprise_avg_contract": "$2,400/month",
+      "enterprise_compliance_cost": "$60K + 3 months",
+      "current_smb_customers": "28",
+      "enterprise_pipeline": "4 deals worth $115K ARR"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CFO", "CTO"]
+  },
+  {
+    "id": "crisis_001",
+    "category": "crisis",
+    "title": "Data Breach",
+    "difficulty": "hard",
+    "context": "A security researcher disclosed a vulnerability that exposed user email addresses and hashed passwords for 3,400 accounts. The researcher gave you 48 hours before going public. No evidence of active exploitation yet.",
+    "trigger_question": "Do we disclose immediately, patch quietly, or negotiate with the researcher?",
+    "data_points": {
+      "accounts_affected": "3,400",
+      "data_exposed": "Emails + hashed passwords",
+      "active_exploitation": "None confirmed",
+      "researcher_deadline": "48 hours",
+      "legal_disclosure_requirement": "72 hours in applicable jurisdictions"
+    },
+    "roles_most_affected": ["CEO", "CTO", "CMO"]
+  },
+  {
+    "id": "crisis_002",
+    "category": "crisis",
+    "title": "Key Customer Threatening to Leave",
+    "difficulty": "medium",
+    "context": "Your largest customer ($8,400 MRR, 31% of revenue) sent a formal notice of intent to cancel in 30 days citing 'lack of enterprise features and slow support response times.' No competitor has been mentioned.",
+    "trigger_question": "Do we fight to save them, let them go, or use this as a forcing function to fix support?",
+    "data_points": {
+      "customer_mrr": "$8,400",
+      "percentage_of_revenue": "31%",
+      "cancellation_notice": "30 days",
+      "issues_cited": "Enterprise features + support speed",
+      "estimated_cost_to_fix": "$22,000 in dev time"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CTO", "CFO"]
+  },
+  {
+    "id": "growth_001",
+    "category": "growth",
+    "title": "Go International Now or Later",
+    "difficulty": "medium",
+    "context": "You're getting strong organic inbound from Southeast Asia — 22% of signups last month with zero marketing spend. Localizing properly would cost $40K and 2 months of engineering. Ignoring it means leaving growth on the table.",
+    "trigger_question": "Do we invest in SEA expansion now, put up a waitlist, or ignore it until domestic is stronger?",
+    "data_points": {
+      "sea_signups_percentage": "22%",
+      "sea_marketing_spend": "$0",
+      "localization_cost": "$40,000",
+      "localization_time": "2 months",
+      "runway_remaining": "16 months"
+    },
+    "roles_most_affected": ["CMO", "CTO", "CFO"]
+  },
+  {
+    "id": "growth_002",
+    "category": "growth",
+    "title": "Raise Prices or Grow Volume",
+    "difficulty": "medium",
+    "context": "Your NPS is 68 and retention is strong. The CFO believes you're underpriced — a 40% price increase on new customers is projected to have minimal churn impact. The CMO worries about signaling and top-of-funnel damage.",
+    "trigger_question": "Do we raise prices, run an A/B test, or hold pricing and focus on volume?",
+    "data_points": {
+      "current_price": "$49/month",
+      "nps": "68",
+      "monthly_churn": "2.1%",
+      "cfo_projection": "40% increase with <5% churn impact",
+      "current_mrr": "$24,000"
+    },
+    "roles_most_affected": ["CMO", "CFO", "CEO"]
+  },
+  {
+    "id": "growth_003",
+    "category": "growth",
+    "title": "Partnership Offer from Larger Player",
+    "difficulty": "medium",
+    "context": "A $200M ARR company in an adjacent space wants to resell your product to their 12,000 customers. The deal gives them 30% revenue share and a co-exclusivity clause for 18 months in their vertical.",
+    "trigger_question": "Do we take the partnership, negotiate the exclusivity clause, or walk away?",
+    "data_points": {
+      "partner_customer_base": "12,000",
+      "revenue_share": "30%",
+      "exclusivity_duration": "18 months",
+      "exclusivity_scope": "EdTech vertical",
+      "our_current_mrr": "$21,000"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CFO"]
+  },
+  {
+    "id": "ethics_001",
+    "category": "ethics",
+    "title": "Investor Wants Misleading Metrics",
+    "difficulty": "hard",
+    "context": "Your lead investor is pushing you to present 'total registered users' (14,000) in fundraising materials instead of 'monthly active users' (1,100). They argue it's 'standard practice' and the new investors 'won't ask.'",
+    "trigger_question": "Do we use the metric they want, present both clearly, or push back entirely?",
+    "data_points": {
+      "total_registered_users": "14,000",
+      "monthly_active_users": "1,100",
+      "investor_pressure": "High",
+      "next_round_target": "$3M"
+    },
+    "roles_most_affected": ["CEO", "CFO", "CMO"]
+  },
+  {
+    "id": "ethics_002",
+    "category": "ethics",
+    "title": "Poaching a Competitor's Employee",
+    "difficulty": "easy",
+    "context": "Your top competitor's best engineer reached out wanting to join. They have intimate knowledge of the competitor's roadmap and architecture. Their non-compete is legally questionable but would create friction.",
+    "trigger_question": "Do we hire them, hire them with restrictions, or decline to avoid the legal and ethical exposure?",
+    "data_points": {
+      "candidate_quality": "Top 5% engineer",
+      "non_compete": "Legally gray — likely unenforceable",
+      "knowledge_value": "6-month competitive insight",
+      "legal_risk": "Low-medium"
+    },
+    "roles_most_affected": ["CEO", "CTO", "CFO"]
+  },
+  {
+    "id": "ops_001",
+    "category": "operations",
+    "title": "Remote vs Office Policy",
+    "difficulty": "easy",
+    "context": "Two of your best engineers are refusing to come into the office more than once a week. Your CEO believes in-person collaboration accelerates execution. The team is split 4-3 on the issue and morale is dropping.",
+    "trigger_question": "Do we enforce in-office, go fully remote, or create a hybrid policy?",
+    "data_points": {
+      "team_split": "4 pro-office vs 3 pro-remote",
+      "engineers_pushing_back": "2 (both senior)",
+      "morale_trend": "Declining",
+      "office_lease_cost": "$4,200/month"
+    },
+    "roles_most_affected": ["CEO", "CTO"]
+  },
+  {
+    "id": "ops_002",
+    "category": "operations",
+    "title": "Outsource or Keep In-House",
+    "difficulty": "medium",
+    "context": "Customer support is taking 11 hours/week of engineering time to handle. An outsourced support team costs $3,200/month and can be onboarded in 2 weeks. The CTO argues support insights drive product decisions.",
+    "trigger_question": "Do we outsource support, hire a dedicated support person, or keep it in engineering?",
+    "data_points": {
+      "current_support_time": "11 hours/week of engineering",
+      "outsource_cost": "$3,200/month",
+      "internal_hire_cost": "$52,000/year",
+      "support_ticket_volume": "47 tickets/week"
+    },
+    "roles_most_affected": ["CTO", "CFO", "CMO"]
+  },
+  {
+    "id": "tech_001",
+    "category": "technology",
+    "title": "Tech Debt vs Feature Velocity",
+    "difficulty": "medium",
+    "context": "The CTO says the codebase needs 6 weeks of refactoring or new features will slow to a crawl by Q4. The CMO has 3 enterprise deals pending that require 2 features not yet built. Both cannot happen simultaneously.",
+    "trigger_question": "Do we take the tech debt hit now, delay the refactor, or hire a contractor to run them in parallel?",
+    "data_points": {
+      "refactor_duration": "6 weeks",
+      "pending_enterprise_deals": "3 deals worth $8,400 MRR",
+      "feature_eta_without_refactor": "4 weeks",
+      "contractor_cost_to_parallelize": "$18,000"
+    },
+    "roles_most_affected": ["CTO", "CMO", "CFO"]
+  },
+  {
+    "id": "tech_002",
+    "category": "technology",
+    "title": "Cloud Cost Explosion",
+    "difficulty": "medium",
+    "context": "Your AWS bill jumped from $2,100 to $9,400 last month due to a misconfigured auto-scaling policy. The CTO has a fix but it requires 3 days of downtime or a costly blue-green migration. The CMO has a campaign launching in 5 days.",
+    "trigger_question": "Do we take the downtime, pay for the migration, or delay the campaign?",
+    "data_points": {
+      "aws_bill_before": "$2,100/month",
+      "aws_bill_now": "$9,400/month",
+      "downtime_to_fix": "3 days",
+      "blue_green_migration_cost": "$6,200",
+      "campaign_launch": "5 days"
+    },
+    "roles_most_affected": ["CTO", "CFO", "CMO"]
+  },
+  {
+    "id": "market_001",
+    "category": "market",
+    "title": "Recession Signals Emerging",
+    "difficulty": "hard",
+    "context": "Macro indicators suggest a downturn in 6-12 months. Three of your SMB customers already cited 'budget cuts' in churn surveys. Enterprise deals are extending sales cycles. Your investors are signaling 'extend runway.'",
+    "trigger_question": "Do we cut costs now, accelerate growth before the downturn, or stay the course?",
+    "data_points": {
+      "smb_churn_reason": "Budget cuts (3 customers)",
+      "enterprise_cycle_increase": "+45 days average",
+      "current_runway": "15 months",
+      "monthly_burn": "$28,000",
+      "investor_guidance": "Extend to 24 months minimum"
+    },
+    "roles_most_affected": ["CEO", "CFO", "CMO"]
+  },
+  {
+    "id": "market_002",
+    "category": "market",
+    "title": "Acquisition Offer",
+    "difficulty": "hard",
+    "context": "A strategic acquirer offered $4.2M to acquire the company. The founding team would need to stay for 2 years. Current ARR is $280K. The offer is 15x ARR — strong for this stage. The team has mixed feelings.",
+    "trigger_question": "Do we take the offer, counter, or decline and keep building?",
+    "data_points": {
+      "offer": "$4.2M",
+      "current_arr": "$280,000",
+      "multiple": "15x ARR",
+      "retention_requirement": "2 years",
+      "acquirer_strategic_fit": "High"
+    },
+    "roles_most_affected": ["CEO", "CFO", "CMO", "CTO"]
+  },
+  {
+    "id": "strategy_001",
+    "category": "strategy",
+    "title": "Product-Led vs Sales-Led Growth",
+    "difficulty": "medium",
+    "context": "You're at $22K MRR with both PLG and sales motion running. PLG accounts for 60% of customers but 30% of revenue. Sales accounts for 40% of customers but 70% of revenue. You can only resource one motion properly.",
+    "trigger_question": "Do we double down on PLG, go sales-led, or find a way to run both?",
+    "data_points": {
+      "plg_customers": "60% of total",
+      "plg_revenue": "30% of total",
+      "sales_customers": "40% of total",
+      "sales_revenue": "70% of total",
+      "current_mrr": "$22,000"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CFO"]
+  },
+  {
+    "id": "strategy_002",
+    "category": "strategy",
+    "title": "Niche Down or Go Broad",
+    "difficulty": "medium",
+    "context": "You have traction in e-learning AND HR training — two different buyers, different workflows, different sales cycles. Going deep on one vertical means abandoning the other. Going broad means being mediocre at both.",
+    "trigger_question": "Do we pick one vertical and dominate it, or stay horizontal and accept slower growth?",
+    "data_points": {
+      "elearning_customers": "34",
+      "hr_training_customers": "19",
+      "elearning_avg_mrr": "$210",
+      "hr_training_avg_mrr": "$380",
+      "vertical_focus_resource_needed": "Full CMO + product pivot"
+    },
+    "roles_most_affected": ["CEO", "CMO", "CTO"]
+  },
+  {
+    "id": "team_001",
+    "category": "team",
+    "title": "Underperforming Co-Founder",
+    "difficulty": "hard",
+    "context": "One co-founder holds 25% equity and a CTO title but has been consistently missing deadlines for 4 months. The rest of the team is aware. Two engineers have privately said they'll leave if nothing changes.",
+    "trigger_question": "Do we have the hard conversation and restructure, buy them out, or let it continue and risk the team?",
+    "data_points": {
+      "cofounder_equity": "25%",
+      "missed_deadlines": "4 months consecutive",
+      "engineers_at_risk": "2",
+      "estimated_buyout_cost": "Unknown — no vesting cliff passed"
+    },
+    "roles_most_affected": ["CEO", "CFO"]
+  },
+  {
+    "id": "team_002",
+    "category": "team",
+    "title": "Star Employee Has a Competing Offer",
+    "difficulty": "medium",
+    "context": "Your best CMO-equivalent has a competing offer for $30K more annually. Counter-offering would create pay inequality with 2 other senior employees at the same level. Losing them means rebuilding growth from scratch.",
+    "trigger_question": "Do we counter-offer, restructure all senior comp, or let them go?",
+    "data_points": {
+      "competing_offer_premium": "$30,000/year",
+      "other_senior_employees_at_same_level": "2",
+      "employee_contribution": "Responsible for 40% of new MRR",
+      "replacement_timeline": "3-4 months minimum"
+    },
+    "roles_most_affected": ["CEO", "CFO", "CMO"]
+  },
+  {
+    "id": "legal_001",
+    "category": "legal",
+    "title": "IP Dispute from Former Employer",
+    "difficulty": "hard",
+    "context": "A former employer of your CTO is claiming the core algorithm in your product was developed during their employment. They sent a cease-and-desist. Your lawyer says the claim is weak but defending it costs $40K-$80K.",
+    "trigger_question": "Do we fight it, settle, or rewrite the algorithm to remove the ambiguity?",
+    "data_points": {
+      "legal_claim_strength": "Weak according to counsel",
+      "defense_cost": "$40,000 - $80,000",
+      "settlement_estimate": "$15,000 - $25,000",
+      "rewrite_time": "8 weeks",
+      "fundraising_status": "Series A in progress"
+    },
+    "roles_most_affected": ["CEO", "CTO", "CFO"]
+  },
+  {
+    "id": "ai_001",
+    "category": "technology",
+    "title": "AI Feature Producing Biased Outputs",
+    "difficulty": "hard",
+    "context": "Your AI content recommendation engine has been flagged by 3 enterprise customers for producing culturally biased outputs in non-English contexts. Fixing it properly requires retraining on a balanced dataset — 10 weeks and $28,000. A patch exists that reduces but doesn't eliminate the bias.",
+    "trigger_question": "Do we apply the patch and disclose, do the full fix silently, or proactively notify all affected customers?",
+    "data_points": {
+      "customers_affected": "Potentially all non-English users (~31%)",
+      "patch_eta": "1 week",
+      "full_fix_eta": "10 weeks",
+      "full_fix_cost": "$28,000",
+      "enterprise_customers_flagged": "3"
+    },
+    "roles_most_affected": ["CTO", "CMO", "CEO", "CFO"]
+  }
+]
